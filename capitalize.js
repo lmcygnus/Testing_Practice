@@ -3,3 +3,5 @@ function capitalize(string) {
   const spare = string.slice(1);
   return firstCharacter + spare;
 }
+
+module.exports = capitalize;
