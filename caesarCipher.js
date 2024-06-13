@@ -35,7 +35,9 @@ function caesarCipher(string, n) {
       result.push(characters[(index + n) % 26]);
     }
   }
-  return result;
+  return result.join('');
 }
 
-console.log(caesarCipher('Hello,', 3));
+console.log(caesarCipher('xyz', 3));
+
+module.exports = caesarCipher;
